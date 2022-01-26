@@ -1,0 +1,70 @@
+body {
+    /* change the asshole of font */
+    background-image: linear-gradient(to bottom, var(--roxo-topo), var(--roxo), var(--roxo-centro), var(--azul), var(--azulao));
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 30px;
+    margin: 150px auto;
+    width: 60%;
+    display: flex;
+    background: #FFF;
+    border-radius: 25px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
+}
+
+.container .title {
+    padding: 15px;
+    font-size: 3em;
+}
+
+.container .interation {
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+    display: block;
+    left: -130px;
+}
+
+.container .block {
+    position: absolute;
+    top: 345px;
+    left: 280px;
+}
+
+.container .faq {
+    padding: 5px;
+    margin: 10px;
+    width: 50%;
+}
+
+.container .faq .questions h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.container .faq .question {
+    background: url('../src/images/icon-arrow-down.svg') no-repeat;
+    background-size: 15px;
+    background-position: top 22px right 20px;
+    padding: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.container .faq .question:hover h2 {
+    font-weight: bold;
+}
+
+.container .faq .answer {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+}
+
+.active {
+    display: block;
+}
