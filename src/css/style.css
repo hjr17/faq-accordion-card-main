@@ -1,17 +1,29 @@
+/* OLD
 body {
     /* change the asshole of font */
-    background-image: linear-gradient(to bottom, var(--roxo-topo), var(--roxo), var(--roxo-centro), var(--azul), var(--azulao));
+    /* background-image: linear-gradient(to bottom, var(--roxo-topo), var(--roxo), var(--roxo-centro), var(--azul), var(--azulao));
     background-attachment: fixed;
+    
+}
+*/
+/*
+.main {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
-    padding: 30px;
+    position: relative;
+    padding: 0px;
     margin: 150px auto;
-    width: 60%;
+    width: 80%;
     display: flex;
     background: #FFF;
     border-radius: 25px;
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
+    justify-content: center;
 }
 
 .container .title {
@@ -67,4 +79,325 @@ body {
 
 .active {
     display: block;
+}
+*/
+
+/* NEW MDF */
+/*
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.main {
+    padding: 0;
+    min-height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container .box {
+    display: block;
+    position: absolute;
+    left: -12%;
+    top: 45%;
+    z-index: 100;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container .box .img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container .background-white {
+    max-width: 1000px;
+    height: 80vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container .background-white .card {
+    height: 100%;
+    padding: 2rem 2.5rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
+    border-radius: 22px;
+}
+
+.container .background-white .card .img {
+    display: none;
+}
+
+.container .background-white .card .desktop-interation {
+    display: none;
+    margin: -17rem auto 0 auto;
+    height: 280px;
+    max-width: 500px;
+    transform: translate(-5%);
+    width: 100%;
+    background: url(".src/images/illustration-woman-online-desktop.svg") no-repeat center center/contain;
+}
+
+.container .background-white .card .desktop-interation {
+    position: relative;
+    display: block;
+    left: -5rem;
+}
+
+.container .background-white .card .desktop-interation .illu-desktop {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.container .background-white .card .bgrd-pattern {
+    position: absolute;
+    top: -30%;
+    width: 100%;
+    left: -42.5%;
+    transform: scale(2);
+}
+
+.container .questions {
+    width: 70%;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: left;
+    margin: 2.5rem 0;
+    font-size: 3.5rem;
+    color: hsl(238, 29%, 16%);
+}
+
+.container .questions .question-show {
+    padding: 1.8rem 0;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    transition: all 0.25s;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container .questions .question-show {
+    padding: 1rem 0;
+}
+
+.container .questions .question-show .question-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .questions .question-show .question-tittle .tittle {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+.question-button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.container .questions .question-show .question-button {
+    transform: rotate(180deg);
+}
+
+.container .questions .question-show .question-button .arrow-down {
+    width: 15px;
+    user-select: none;
+}
+
+.container .questions .question-show .question-asnwer {
+    margin: 0;
+    visibility: visible;
+    opacity: 1;
+    height: 5vh;
+}
+
+.p {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    color: hsl(240, 6%, 50%);
+}
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.main {
+    padding: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 150px auto 30px;
+}
+
+.container {
+    position: relative;
+}
+
+.box {
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 46.3%;
+    z-index: 100;
+}
+
+.background-white {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.card {
+    height: 100%;
+    padding: 2rem 2.5rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.384);
+    border-radius: 22px;
+}
+
+.desktop-interation {
+    position: relative;
+    display: block;
+    left: -5rem;
+}
+
+.human-desktop {
+    position: relative;
+    transform: scale(1.2);
+    z-index: 10;
+}
+
+.bgrd-pattern {
+    position: absolute;
+    top: -30%;
+    left: -44%;
+    transform: scale(2);
+}
+
+.questions {
+    width: 70%;
+    max-width: 600px;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: left;
+    margin: 1.75rem 0;
+    font-size: 3.5rem;
+    color: hsl(238, 29%, 16%);
+}
+
+.question-show {
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    transition: all 0.25s;
+}
+
+.question-tittle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: hsl(237, 12%, 33%);
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.25s;
+    user-select: none;
+}
+
+h2:hover {
+    color: orange
+}
+
+.question-answer {
+    margin-top: -1.5rem;
+    display: none;
+    transition: all 0.25s;
+    padding: 2rem 0 0.5rem;
+}
+
+.question.active .question-answer {
+    display: block;
+}
+
+.question {
+    padding: 1.0rem 0;
+    border-bottom: 2px solid hsl(240, 5%, 91%);
+    transition: all 0.25s;
+}
+
+.footer {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.footer .chief:hover {
+    font-weight: 600;
+    transition: all 0.25s;
+}
+
+.footer .author {
+    font-weight: 800;
+    color: rgb(28, 221, 10);
 }
